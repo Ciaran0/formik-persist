@@ -35,10 +35,12 @@ export const Signup = () =>
 
 ### Props
 
-Only two props! 
+Only four props!
 
 - `name: string`: LocalStorage key to save form state to
 - `debounce:? number`: Default is `300`. Number of ms to debounce the function that saves form state.
+- `isSessionStorage:? boolean`: default is `false` . Send if you want Session storage inplace of Local storage
+- `ignoreFields:? string[]`: Array of fields that will not be persisted to storage.
 
 
 ## Author
@@ -48,5 +50,5 @@ Only two props!
 
 ## Todo
 
-- Alternative storages (localForage, sessionStorage)
+- Alternative storages (localForage)
 - Support AsyncStorage for React Native
